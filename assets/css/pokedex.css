@@ -12,6 +12,7 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .pokemon .number {
@@ -21,7 +22,8 @@
     font-size: .625rem;
 }
 
-.pokemon .name {
+.pokemon .name,
+.poke-identify .poke-name {
     color: #fff;
     margin-bottom: .25rem;
     text-transform: capitalize;
@@ -40,7 +42,7 @@
     list-style: none;
 }
 
-.pokemon .detail .types .type {
+.type {
     color: #fff;
     text-align: center;
     padding: .25rem .5rem;
@@ -76,58 +78,75 @@
 }
 
 .normal {
-    background-color: #a6a877;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(149, 138, 13, 1) 0%, rgba(166, 168, 119, 1) 100%);
 }
+
 .grass {
-    background-color: #77c850;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 73, 1) 0%, rgba(0, 189, 92, 1) 100%);
 }
+
 .fire {
-    background-color: #ee7f30;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(172, 77, 13, 1) 0%, rgba(238, 127, 48, 1) 100%);
 }
+
 .water {
-    background-color: #678fee;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 37, 173, 1) 0%, rgba(103, 143, 238, 1) 100%);
 }
+
 .electric {
-    background-color: #f7cf2e;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(173, 121, 15, 1) 0%, rgba(247, 207, 46, 1) 100%);
 }
+
 .ice {
-    background-color: #98d5d7;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 159, 173, 1) 0%, rgba(152, 213, 215, 1) 100%);
 }
+
 .ground {
-    background-color: #dfbf69;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,110,15,1) 0%, rgba(223,191,105,1) 100%);
 }
+
 .flying {
-    background-color: #a98ff0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,15,173,1) 0%, rgba(169,143,240,1) 100%);
 }
+
 .poison {
-    background-color: #a040a0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,16,164,1) 0%, rgba(160,64,160,1) 100%);
 }
+
 .fighting {
-    background-color: #bf3029;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(164,31,16,1) 0%, rgba(191,48,41,1) 100%);
 }
+
 .psychic {
-    background-color: #f65687;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(164,16,79,1) 0%, rgba(246,86,135,1) 100%);
 }
+
 .dark {
-    background-color: #725847;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,71,17,1) 0%, rgba(114,88,71,1) 100%);
 }
+
 .rock {
-    background-color: #b8a137;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,120,24,1) 0%, rgba(184,161,55,1) 100%);
 }
+
 .bug {
-    background-color: #a8b720;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,129,24,1) 0%, rgba(168,183,32,1) 100%);
 }
+
 .ghost {
-    background-color: #6e5896;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,26,142,1) 0%, rgba(110,88,150,1) 100%);
 }
+
 .steel {
-    background-color: #b9b7cf;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,33,138,1) 0%, rgba(185,183,207,1) 100%);
 }
+
 .dragon {
-    background-color: #6f38f6;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,35,163,1) 0%, rgba(111,56,246,1) 100%);
 }
+
 .fairy {
-    background-color: #f9aec7;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,76,112,1) 0%, rgba(249,174,199,1) 100%);
 }
 
 @media screen and (min-width: 380px) {

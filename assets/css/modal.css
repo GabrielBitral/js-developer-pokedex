@@ -1,0 +1,193 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  border-radius: 1rem;
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.poke-identify {
+  height: 54%;
+  width: 100%;
+  position: absolute;
+  z-index: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.poke-id {
+  color: #ffffff;
+  text-align: right;
+  font-size: .7rem;
+}
+
+.poke-name {
+  margin-top: .8rem;
+}
+
+.poke-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.poke-img img {
+  width: 100%;
+  height: 9rem;
+}
+
+ol.pokemon-types {
+  display: flex;
+}
+
+ol.pokemon-types li:nth-child(1) {
+  margin-right: .4rem;
+}
+
+ol.pokemon-types .type {
+  width: 30%;
+  list-style: none;
+}
+
+.poke-more-details {
+  height: 53%;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  z-index: auto;
+  top: 47%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.poke-more-details .title {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.poke-more-details .poke-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+span.poke-abilities,
+span.poke-species {
+  text-transform: capitalize;
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  padding-right: 1rem;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 424px) {
+  .modal-content {
+    margin: 12% auto;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 464px) {
+  .modal-content {
+    margin: 12% auto;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .modal-content {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .modal-content {
+    margin: 10% auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 565px) {
+  .modal-content {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 637px) {
+  .modal-content {
+    width: 45%;
+    margin: 8% auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 795px) {
+  .modal-content {
+    width: 40%;
+    margin: 6% auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .modal-content {
+    margin: 4% auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-content {
+    width: 22%;
+    height: 72%;
+  }
+
+  .poke-img img {
+    width: 100%;
+    height: 14rem;
+  }
+}

@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/poke-favicon.png" type="image/x-icon">
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Fonte Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/pokedex.css">
 </head>
+
 <body>
     <section class="content">
         <h1>Pokedex</h1>
@@ -28,11 +36,39 @@
                 Load More
             </button>
         </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="poke-identify">
+                    <span class="poke-name"></span>
+                    <span class="poke-id"></span>
+                    <div class="poke-types">
+                        <ol class="pokemon-types">
+                            <!-- Poke types -->
+                        </ol>
+                    </div>
+                    <div class="poke-img">
+                    </div>
+                </div>
+                <div class="poke-more-details">
+                    <span class="title">More Details</span>
+                    <div class="poke-details">
+                        <span class="poke-height"></span>
+                        <span class="poke-weight"></span>
+                        <span class="poke-species"></span>
+                        <span class="poke-abilities"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Nosso JS -->
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

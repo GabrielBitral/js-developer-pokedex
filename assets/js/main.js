@@ -23,6 +23,7 @@ function loadPokemonItems(offset, limit) {
         `
         ).join('');
         pokemonList.innerHTML += newHtml;
+        modal.adicionarClickAosCards();
     })
 }
 
